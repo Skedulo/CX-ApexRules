@@ -7,26 +7,38 @@
         Test PMD Ruleset
     </description>
 
- <!-- CODE STYLE -->
-     <rule ref="category/apex/codestyle.xml/FieldNamingConventions" />
-     <rule ref="category/apex/codestyle.xml/ForLoopsMustUseBraces" />
-     <rule ref="category/apex/codestyle.xml/FormalParameterNamingConventions" />
-     <rule ref="category/apex/codestyle.xml/IfElseStmtsMustUseBraces" />
-     <rule ref="category/apex/codestyle.xml/IfStmtsMustUseBraces" />
-     <rule ref="category/apex/codestyle.xml/OneDeclarationPerLine" />
-     <rule ref="category/apex/codestyle.xml/WhileLoopsMustUseBraces" />
+    <!-- CODE STYLE -->
+    <rule ref="category/apex/codestyle.xml/FieldNamingConventions" />
+    <rule ref="category/apex/codestyle.xml/ForLoopsMustUseBraces" />
+    <rule ref="category/apex/codestyle.xml/FormalParameterNamingConventions" />
+    <rule ref="category/apex/codestyle.xml/IfElseStmtsMustUseBraces" />
+    <rule ref="category/apex/codestyle.xml/IfStmtsMustUseBraces" />
+    <rule ref="category/apex/codestyle.xml/OneDeclarationPerLine" />
+    <rule ref="category/apex/codestyle.xml/WhileLoopsMustUseBraces" />
+    
+    <!-- DESIGN -->
+    <rule ref="category/apex/design.xml/AvoidDeeplyNestedIfStmts" />
+    
+    <!-- DOCUMENTATION -->
+    <rule ref="category/apex/documentation.xml/ApexDoc" />
+    
+    <!-- BEST PRACTICES -->
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveAsserts" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestMethodShouldHaveIsTestAnnotation" />
+    <rule ref="category/apex/bestpractices.xml/ApexUnitTestShouldNotUseSeeAllDataTrue" />
+    <rule ref="category/apex/bestpractices.xml/UnusedLocalVariable" />
+    <rule ref="category/apex/bestpractices.xml/AvoidLogicInTrigger" />
 
-     <!-- DESIGN -->
-     <rule ref="category/apex/design.xml/AvoidDeeplyNestedIfStmts" />
+    <!-- ERROR PRONE -->
+    <rule ref="category/apex/errorprone.xml/AvoidHardcodingId" />
+    <rule ref="category/apex/errorprone.xml/EmptyIfStmt" />
+    <rule ref="category/apex/errorprone.xml/EmptyStatementBlock" />
+    
+    <!-- PERFORMANCE -->
+    <rule ref="category/apex/performance.xml/OperationWithLimitsInLoop" />
 
-     <!-- DOCUMENTATION -->
-     <rule ref="category/apex/documentation.xml/ApexDoc" />
-
-     <!-- BEST PRACTICES -->
-     <rule ref="category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveAsserts" />
-     <rule ref="category/apex/bestpractices.xml/ApexUnitTestMethodShouldHaveIsTestAnnotation" />
-     <rule ref="category/apex/bestpractices.xml/ApexUnitTestShouldNotUseSeeAllDataTrue" />
-     <rule ref="category/apex/bestpractices.xml/UnusedLocalVariable" />
-     <rule ref="category/apex/bestpractices.xml/AvoidLogicInTrigger" />
-
+    <!-- SECURITY -->
+    <rule ref="category/apex/security.xml/ApexInsecureEndpoint" />
+    <rule ref="category/apex/security.xml/ApexSOQLInjection" />
+    
 </ruleset>
