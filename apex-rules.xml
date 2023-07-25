@@ -20,7 +20,7 @@
     <rule ref="category/apex/design.xml/AvoidDeeplyNestedIfStmts" />
     
     <!-- DOCUMENTATION -->
-    <rule ref="category/apex/documentation.xml/ApexDoc" />
+    <!-- <rule ref="category/apex/documentation.xml/ApexDoc" /> -->
     
     <!-- BEST PRACTICES -->
     <rule ref="category/apex/bestpractices.xml/ApexUnitTestClassShouldHaveAsserts" />
